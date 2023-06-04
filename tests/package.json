@@ -10,6 +10,26 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^29.4.1",
+    "jest-html-reporter": "^3.10.0",
+    "jest-junit": "^16.0.0",
     "supertest": "^6.3.3"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report",
+          "outputPath": "./reports/test-report.html"
+        }
+      ],
+      [
+        "jest-junit", {
+          "outputDirectory": "reports",
+          "outputName": "jest-junit.xml"
+        }
+      ]
+    ]
   }
 }
