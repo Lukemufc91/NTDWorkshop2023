@@ -130,3 +130,6 @@ dist
 .pnp.*
 
 .DS_Store
+
+test-report.html
+jest-junit.xml
