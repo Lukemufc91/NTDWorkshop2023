@@ -8,7 +8,7 @@ pipeline {
             }
     stage ('Run API container') {
                 steps {
-                    bat 'docker run -p 3000:3000 --network bridge -d dbala/movie-api'
+                    bat 'docker run -p 3000:3000 --network bridge --name api-container --rm -d dbala/movie-api'
                 }
             }
     stage('Build Test container') {
@@ -23,8 +23,7 @@ pipeline {
             }
     stage('Cleanup') {
                 steps {
-                    bat 'docker kill dbala/movie-api'
-                    bat 'docker kill dbala/movie-api-tests'
+                    bat 'docker kill api-container'
                 }
             }
 }
