@@ -29,12 +29,12 @@ pipeline {
 //                 bat 'docker cp report-container:/root/reports/. C:/ProgramData/Jenkins/.jenkins/workspace/movies-api-test/reports'
             }
         }
-        stage('Cleanup') {
-            always {
-                bat 'docker kill api-container'
-                bat 'docker rm report-container'
-                bat 'docker volume rm test-reports'
-            }
-        }
+    }
+    post('Cleanup') {
+                always {
+                    bat 'docker kill api-container'
+                    bat 'docker rm report-container'
+                    bat 'docker volume rm test-reports'
+                }
     }
 }
