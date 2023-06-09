@@ -3,7 +3,6 @@ pipeline {
     stages {
     stage('Build API container') {
                 steps {
-                    bat 'docker kill api-container'
                     bat 'docker build . -t dbala/movie-api'
                 }
             }
