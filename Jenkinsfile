@@ -35,18 +35,5 @@ pipeline {
                 sh 'docker volume rm test-reports'
             }
         }
-        stage('Publish Test Results') {
-            steps {
-                junit skipPublishingChecks: true, testResults: 'reports/jest-junit.xml'
-                publishHTML target: [
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: false,
-                    keepAll: true,
-                    reportDir: 'reports',
-                    reportFiles: 'test-report.html',
-                    reportName: 'Test Results'
-                ]
-            }
-        }
     }
 }
