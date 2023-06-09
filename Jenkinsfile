@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build API container') {
             steps {
-                bat 'docker build . -t masterman/movie-api'
+                bat 'docker build . -t dbala/movie-api'
             }
         }
     }
