@@ -25,7 +25,8 @@ pipeline {
         stage('Retrieve reports') {
             steps {
                 bat 'docker container create --name report-container -v test-reports:/root alpine'
-                bat 'docker cp report-container:/root/reports/. ${WORKSPACE}/reports'
+//                 bat 'docker cp report-container:/root/reports/. ${WORKSPACE}/reports'
+                bat 'docker cp report-container:/root/reports/. C:/ProgramData/Jenkins/.jenkins/workspace/movies-api-test/reports'
             }
         }
         stage('Cleanup') {
