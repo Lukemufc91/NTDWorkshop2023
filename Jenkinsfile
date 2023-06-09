@@ -19,7 +19,7 @@ pipeline {
         stage('Execute tests') {
             steps {
                 bat 'docker volume create test-reports'
-                bat 'docker run -e PORT=3000 -e BASE_URI=172.17.0.2 --network bridge -v test-reports:/usr/src/app --rm masterman/movie-api-tests'
+                bat 'docker run -e PORT=3000 -e BASE_URI=172.17.0.2 --network bridge -v test-reports:/usr/src/app --rm dbala/movie-api-tests'
             }
         }
         stage('Retrieve reports') {
