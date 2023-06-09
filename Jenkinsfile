@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('My First Stage') {
+        stage('Build API container') {
             steps {
-                sh 'echo "Wooh, I have created a pipeline"'
+                sh 'docker build . -t masterman/movie-api'
             }
         }
     }
