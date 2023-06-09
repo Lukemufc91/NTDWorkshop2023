@@ -1,0 +1,86 @@
+[
+    {
+        "title": "Lord of the Rings: The Fellowship of the Rings",
+        "rating": 10,
+        "certificate": "12",
+        "release_date": 2001,
+        "directed_by": "Peter Jackson"
+    },
+    {
+        "title": "Lord of the Rings: The Two Towers",
+        "rating": 10,
+        "certificate": "12",
+        "release_date": 2002,
+        "directed_by": "Peter Jackson"
+    },
+    {
+        "title": "Lord of the Rings: The Return of the King",
+        "rating": 10,
+        "certificate": "12",
+        "release_date": 2003,
+        "directed_by": "Peter Jackson"
+    },
+    {
+        "title": "Fight Club",
+        "rating": 9,
+        "certificate": "18",
+        "release_date": 1999,
+        "directed_by": "David Fincher"
+    },
+    {
+        "title": "Finding Nemo",
+        "rating": 7,
+        "certificate": "U",
+        "release_date": 2003,
+        "directed_by": "Andrew Stanton"
+    },
+    {
+        "title": "ET",
+        "rating": 8,
+        "certificate": "PG",
+        "release_date": 1982,
+        "directed_by": "Steven Spielberg"
+    },
+    {
+        "title": "The Lost Boys",
+        "rating": 7,
+        "certificate": "PG",
+        "release_date": 1987,
+        "directed_by": "Joel Schumacher"
+    },
+    {
+        "title": "Toy Story",
+        "rating": 9,
+        "certificate": "U",
+        "release_date": 1995,
+        "directed_by": "John Lasseter"
+    },
+    {
+        "title": "Spice World",
+        "rating": 3,
+        "certificate": "PG",
+        "release_date": 1997,
+        "directed_by": "Bob Spiers"
+    },
+    {
+        "title": "Home Alone",
+        "rating": 8,
+        "certificate": "PG",
+        "release_date": 1990,
+        "directed_by": "Chris Columbus"
+    },
+    {
+        "title": "Super Mario Bros",
+        "rating": 1,
+        "certificate": "PG",
+        "release_date": 1993,
+        "directed_by": "Rocky Morton"
+    },
+    {
+        "title": "XXX",
+        "rating": 4,
+        "certificate": 15,
+        "release_date": 2002,
+        "directed_by": "Rob Cohen"
+    }
+]
